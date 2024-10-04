@@ -1,0 +1,91 @@
+<mxfile host="65bd71144e">
+    <diagram id="R4oM7gl1XTWYSzvOrLZL" name="Seite-1">
+        <mxGraphModel dx="954" dy="416" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="k:Kunde" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="40" width="100" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2">
+                    <mxGeometry x="45" y="80" width="10" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2">
+                    <mxGeometry x="55" y="120" width="10" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="m:Mitarbeiter" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="40" width="100" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="3">
+                    <mxGeometry x="45" y="80" width="10" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="pommesReady()" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.086;exitY=0.679;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="3" source="22">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="135" y="279.66" as="sourcePoint"/>
+                        <mxPoint x="55" y="279.66" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="p:Pommes" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="590" y="240" width="100" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="4">
+                    <mxGeometry x="45" y="60" width="10" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Zubereitungszeit" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="22" parent="4">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="55" y="50" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="85" y="50"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="bestellePommes()" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;exitX=0.967;exitY=0.028;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.133;entryY=0.042;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5" target="6">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="240" y="130" as="sourcePoint"/>
+                        <mxPoint x="400" y="130" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="mitMayo()" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.022;exitY=0.178;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.967;entryY=-0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" target="8" parent="1" source="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="460" y="160" as="sourcePoint"/>
+                        <mxPoint x="360" y="159" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="Jo!" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=0.078;entryY=0.516;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.967;exitY=0.934;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="8" parent="1" target="6">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="470" y="236" as="targetPoint"/>
+                        <mxPoint x="250" y="235" as="sourcePoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="{bestellung liegt vor}" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=block;endFill=1;endSize=6;align=left;exitX=1.078;exitY=0.723;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="6" target="4">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="480" y="280" as="sourcePoint"/>
+                        <mxPoint x="600" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Pommes aufessen()" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;exitX=0.967;exitY=0.798;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.4;entryY=0.486;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5" target="18">
+                    <mxGeometry x="-0.0907" width="160" relative="1" as="geometry">
+                        <mxPoint x="240" y="400" as="sourcePoint"/>
+                        <mxPoint x="580" y="400" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" value="" style="shape=umlDestroy;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="390" width="20" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="loveAll_serveAll()" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;exitX=-0.067;exitY=0.902;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.911;entryY=0.564;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="5">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="297.6700000000001" y="300.56" as="sourcePoint"/>
+                        <mxPoint x="240" y="318" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="&lt;b&gt;sd:Pommes&lt;/b&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="20" width="760" height="490" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
